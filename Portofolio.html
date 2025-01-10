@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - HIMATIK-PNUP</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #0d0d11;
+      color: #e7e9ed;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+    }
+
+    .navbar {
+      background: linear-gradient(45deg, #e6d821, #1a1a1d);
+      padding: 10px 0;
+    }
+
+    .navbar .d-flex {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .navbar .navbar-brand {
+      margin-left: 60px;
+      color: #031547!important;
+      font-weight: bold;
+    }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+
+    .navbar .nav-link:hover {
+      color: #edcc39 !important;
+      text-decoration: underline;
+    }
+
+    .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #layanan {
+      padding: 50px 0;
+      background-color: #1a1a1d;
+    }
+
+    #layanan h2 {
+    margin-top: 50px; /* Menurunkan posisi judul */
+    text-align: center;
+    font-size: 2rem;
+    color: #edcc39;
+    }
+
+
+    .kotak-layanan {
+      background-color: #252529;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 50px;
+    }
+
+    .kotak-layanan:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .kotak-layanan img {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+
+    .kotak-layanan h5 {
+      margin-top: 15px;
+      color: #edcc39;
+      font-size: 1.2rem;
+    }
+
+    .kotak-layanan p {
+      font-size: 1rem;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    .kotak-layanan ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .kotak-layanan ul li {
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    .kotak-layanan ul li::before {
+      content: "• ";
+      color: #edcc39;
+    }
+
+    @media (max-width: 768px) {
+      .kotak-layanan {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .kotak-layanan {
+        padding: 15px;
+      }
+    }
+
+    /* Styling untuk Modal */
+.modal-content {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.modal-header {
+  background-color: #9c0404;
+  color: white;
+  border-bottom: 2px solid #0056b3;
+  border-radius: 8px 8px 0 0;
+  padding: 15px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 15px;
+  font-size: 1rem;
+  color: #495057;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #9c0404;
+}
+
+hr {
+  border: 1px solid #dee2e6;
+  margin: 20px 0;
+}
+
+/* Link styling */
+a {
+  color: #9c0404;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 90%;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <img src="PNUP.png" alt="Logo PNUP" class="logo">
+      <img src="HIMATIK.png" alt="Logo HIMATIK" class="logo ms-2">
+    </div>
+    <a class="navbar-brand" href="index.html">HIMATIK-PNUP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tentang.html">Tentang Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="Portofolio.html">Portofolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Bagian Portofolio Anggota Tim -->
+<section id="layanan">
+  <div class="container">
+    <h2 class="text-center mb-4">PORTOFOLIO ANGGOTA DEPARTEMEN SDM</h2>
+    <div class="row">
+      <!-- Febriany Alda Risty Pabisa -->
+      <div class="col-md-3 mb-4">
+        <div class="kotak-layanan" data-bs-toggle="modal" data-bs-target="#modalAlda">
+          <img src="ALDA.jpg" alt="Febriany Alda Risty Pabisa" class="img-fluid img-anggota">
+          <h5>Febriany Alda Risty Pabisa</h5>
+          <p><strong>Koordinator Departemen SDM</strong></p>
+          <ul>
+            <li>Pengembangan Program Pelatihan</li>
+            <li>Manajemen Tim dan Pengorganisasian Acara</li>
+            <li>Evaluasi Kinerja Anggota</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Rika Aulia -->
+      <div class="col-md-3 mb-4">
+        <div class="kotak-layanan" data-bs-toggle="modal" data-bs-target="#modalRika">
+          <img src="Rika.jpg" alt="Rika Aulia" class="img-fluid img-anggota">
+          <h5>Rika Aulia</h5>
+          <p><strong>Anggota Departemen SDM</strong></p>
+          <ul>
+            <li>Pengelolaan Sumber Daya Manusia</li>
+            <li>Pelatihan Pengembangan Diri</li>
+            <li>Analisis Kebutuhan Pelatihan</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Badriyah -->
+      <div class="col-md-3 mb-4">
+        <div class="kotak-layanan" data-bs-toggle="modal" data-bs-target="#modalBadriyah">
+          <img src="Bacull.jpg" alt="Badriyah" class="img-fluid img-anggota">
+          <h5>Badriyah</h5>
+          <p><strong>Anggota Departemen SDM</strong></p>
+          <ul>
+            <li>Perencanaan Program Pengembangan Anggota</li>
+            <li>Monitoring dan Evaluasi Program</li>
+            <li>Penilaian Kinerja dan Feedback</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Amir Hamzah Arif -->
+      <div class="col-md-3 mb-4">
+        <div class="kotak-layanan" data-bs-toggle="modal" data-bs-target="#modalAmir">
+          <img src="Om Kiplii.jpg" alt="Amir Hamzah Arif" class="img-fluid img-anggota">
+          <h5>Amir Hamzah Arif</h5>
+          <p><strong>Anggota Departemen SDM</strong></p>
+          <ul>
+            <li>Rekrutmen dan Seleksi Anggota</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Febriany Alda Risty Pabisa -->
+<div class="modal fade" id="modalAlda" tabindex="-1" aria-labelledby="modalAldaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAldaLabel">Febriany Alda Risty Pabisa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Koordinator Departemen SDM</strong></p>
+        <ul>
+          <li>Pengembangan Program Pelatihan</li>
+          <li>Manajemen Tim dan Pengorganisasian Acara</li>
+          <li>Evaluasi Kinerja Anggota</li>
+        </ul>
+        <hr>
+        <!-- Profile Tambahan -->
+        <h6><strong>Profil</strong></h6>
+        <ul>
+          <li><strong>Nama:</strong> Febriany Alda Risty Pabisa</li>
+          <li><strong>Tempat, Tanggal Lahir:</strong> Makassar, 19 February 2005</li>
+          <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+          <li><strong>Agama:</strong> Kristen Protestan</li>
+          <li><strong>Jenis Kelamin:</strong> Perempuan</li>
+          <li><strong>Status:</strong> Mahasiswa</li>
+          <li><strong>Kesehatan:</strong> Baik</li>
+          <li><strong>Kontak:</strong> <a href="mailto:alda@example.com">febrianyaldaristy1902@gmail.com</a> | +62 822 9074 5799</li>
+        </ul>
+        <hr>
+        <h6><strong>Riwayat Pendidikan</strong></h6>
+        <ul>
+          <li>TK Kemala Bhayangkari (2010- 2011)</li>
+          <li>SDN Kemala Bhayangkari (2011 - 2017)</li>
+          <li>SMPN 35 Makassar (2017 - 2020)</li>
+          <li>SMA Negeri 5 Makassar (2020 - 2023)</li>
+          <li>Politeknik Negeri Ujung Pandang - Teknik Informatika (2023 - Sekarang)</li>
+        </ul>
+        <hr>
+        <h6><strong>Pengalaman Organisasi</strong></h6>
+        <ul>
+          <li>Koordinator Dankom Nasional (2005 - 2023)</li>
+          <li>Anggota HIMATIK-PNUP Departemen SDM (2023 - 2024)</li>
+          <li>Koordinator Departemen SDM HIMATIK-PNUP (2024)</li>
+          <li>Anggota Departemen Publikasi dan Kreativitas UKM Bahasa PNUP (2024)</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Rika Aulia -->
+<div class="modal fade" id="modalRika" tabindex="-1" aria-labelledby="modalRikaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRikaLabel">Rika Aulia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Anggota Departemen SDM</strong></p>
+        <ul>
+          <li>Pengelolaan Sumber Daya Manusia</li>
+          <li>Pelatihan Pengembangan Diri</li>
+          <li>Analisis Kebutuhan Pelatihan</li>
+        </ul>
+        <hr>
+        <!-- Profile Tambahan -->
+        <h6><strong>Profil</strong></h6>
+        <ul>
+          <li><strong>Nama:</strong> Rika Aulia</li>
+          <li><strong>Tempat, Tanggal Lahir:</strong> Makassar, 31 Desember 2004</li>
+          <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+          <li><strong>Agama:</strong> Islam</li>
+          <li><strong>Jenis Kelamin:</strong> Perempuan</li>
+          <li><strong>Status:</strong> Mahasiswa</li>
+          <li><strong>Kesehatan:</strong> Baik</li>
+          <li><strong>Kontak:</strong> <a href="mailto:rika.aulia@example.com">rika.aulia@example.com</a> | +62 813 1234 5678</li>
+        </ul>
+        <hr>
+        <h6><strong>Riwayat Pendidikan</strong></h6>
+        <ul>
+          <li>SD Inpres Bakung 1 Sudiang (2011- 2017)</li>
+          <li>SMP Negeri 14 Makassar (2017 - 2020)</li>
+          <li>SMAK Mutiara Ilmu (2020 - 2023)</li>
+          <li>Politeknik Negeri Ujung Pandang - Teknik Informatika (2023 - Sekarang)</li>
+        </ul>
+        <hr>
+        <h6><strong>Pengalaman Organisasi</strong></h6>
+        <ul>
+          <li>Anggota EO Unit Kegiatan Multimedia (2021 - 2023)</li>
+          <li>Anggota HIMATIK-PNUP Departemen SDM (2022 - Sekarang)</li>
+          <li>Koordinator Humas Nasional (2023 - 2024)</li>
+          <li>Bendahara BINET'23 (2023 - Sekarang)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Badriyah -->
+<div class="modal fade" id="modalBadriyah" tabindex="-1" aria-labelledby="modalBadriyahLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBadriyahLabel">Badriyah</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Anggota Departemen SDM</strong></p>
+        <ul>
+          <li>Perencanaan Program Pengembangan Anggota</li>
+          <li>Monitoring dan Evaluasi Program</li>
+          <li>Penilaian Kinerja dan Feedback</li>
+        </ul>
+        <hr>
+        <!-- Profile Tambahan -->
+        <h6><strong>Profil</strong></h6>
+        <ul>
+          <li><strong>Nama:</strong> Badriyah</li>
+          <li><strong>Tempat, Tanggal Lahir:</strong> Belawa Wajo, 21 April 2005</li>
+          <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+          <li><strong>Agama:</strong> Islam</li>
+          <li><strong>Jenis Kelamin:</strong> Perempuan</li>
+          <li><strong>Status:</strong> Mahasiswa</li>
+          <li><strong>Kesehatan:</strong> Baik</li>
+          <li><strong>Kontak:</strong> <a href="mailto:badriyah@example.com">badriyah@example.com</a> | +62 823 9876 5432</li>
+        </ul>
+        <hr>
+        <h6><strong>Riwayat Pendidikan</strong></h6>
+        <ul>
+          <li>TK RA.Darunnaja (2010- 2011)</li>
+          <li>SDN 265 Timammpu (2011 - 2017)</li>
+          <li>SMP MTSN Luwu Timur (2017 - 2020)</li>
+          <li>SMA MA.Darunnaja (2020 - 2023)</li>
+          <li>Politeknik Negeri Ujung Pandang - Teknik Informatika (2023 - Sekarang)</li>
+        </ul>
+        <hr>
+        <h6><strong>Pengalaman Organisasi</strong></h6>
+        <ul>
+          <li>Sekretaris OSIS SMA MA.Darunnaja  (2021 - 2022)</li>
+          <li>Anggota HIMATIK-PNUP Departemen SDM (2023 - Sekarang)</li>
+          <li>Bendahara Famgath TMJ (2024)</li>
+          <li>Anggota Departemen SDM UKM Bahasa PNUP (2024)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Amir Hamzah Arif -->
+<div class="modal fade" id="modalAmir" tabindex="-1" aria-labelledby="modalAmirLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAmirLabel">Amir Hamzah Arif</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Anggota Departemen SDM</strong></p>
+        <ul>
+          <li>Rekrutmen dan Seleksi Anggota</li>
+        </ul>
+        <hr>
+        <!-- Profile Tambahan -->
+        <h6><strong>Profil</strong></h6>
+        <ul>
+          <li><strong>Nama:</strong> Amir Hamzah Arif</li>
+          <li><strong>Tempat, Tanggal Lahir:</strong> Pangkep, 16 Mei 2004</li>
+          <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+          <li><strong>Agama:</strong> Islam</li>
+          <li><strong>Jenis Kelamin:</strong> Laki-laki</li>
+          <li><strong>Status:</strong> Mahasiswa</li>
+          <li><strong>Kesehatan:</strong> Baik</li>
+          <li><strong>Kontak:</strong> <a href="mailto:amir.arif@example.com">amir.arif@example.com</a> | +62 821 2345 6789</li>
+        </ul>
+        <hr>
+        <h6><strong>Riwayat Pendidikan</strong></h6>
+        <ul>
+          <li>SD Negeri 5 Pangkep (2010 - 2016)</li>
+          <li>SMP Negeri 3 Pangkep (2016 - 2019)</li>
+          <li>SMAK 1 Pangkep (2019 - 2022)</li>
+          <li>Politeknik Negeri Ujung Pandang - Teknik Informatika (2023- Sekarang)</li>
+        </ul>
+        <hr>
+        <h6><strong>Pengalaman Organisasi</strong></h6>
+        <ul>
+          <li>Ketua Multimedia (2020 - 2021)</li>
+          <li>Anggota HIMATIK-PNUP Departemen SDM (2023 - Sekarang)</li>
+          <li>Anggota UKM Persma PNUP (2024)</li>
+          <li>Anggota Dankom Nasional (2023 - 2024)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
